@@ -1,6 +1,5 @@
 package hospital;
 import org.junit.runner.RunWith;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberOptions.SnippetType;
@@ -12,7 +11,9 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		plugin = {"html: target/cucmber.html"},
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE,
-		glue = {"hospital"})
+		glue = {"hospital"}
+		
+		)
 
 
 public class AcceptanceTest {
