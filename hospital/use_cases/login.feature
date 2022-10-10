@@ -8,15 +8,24 @@ Background:
 		| tasneem | tasneem12345 |
 		| marah | marah12345 |
 		| ahmed | ahmed12345 |
-	When user enters "username" with "password"   
+	When user enters <username> with <password> 
     And user click "log in" button
 
-Scenario: Verification of Login Function  
-Then user should see "My Account" 
+Scenario Outline: Verification of Login Function  
+Then user should see "My Account"
+
+Examples:
+|username|password|
+| reem | reem12345 |
+| tasneem | tasneem12345 |
 	
-Scenario: Unsuccessful login
+Scenario Outline: Unsuccessful login
 Then error message displayed with wrong password
 And user returns back on login page
+Examples:
+| marah | 123 |
+| ahme | ahmed12345 |
+| khalid | khalid12345 |
 
 
 
