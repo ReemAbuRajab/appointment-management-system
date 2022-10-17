@@ -8,11 +8,13 @@ Background:
 		| tasneem | tasneem12345 |
 		| marah | marah12345 |
 		| ahmed | ahmed12345 |
-	When user enters "<username>" in username field
-	And user enters "<password>" in password field 
-	And user click "log in" button
+
 		
-Scenario Outline: Verification of Login Function  
+Scenario Outline: Verification of Login Function 
+	When user enters "<username>" in username field
+	And user enters "<password>" in password field  
+	And user click "log in" button
+	
 	Then user should see "My Account" 
 	
 	Examples: 
@@ -20,7 +22,9 @@ Scenario Outline: Verification of Login Function
 		| reem | reem12345 |
 		| tasneem | tasneem12345 |
 		
-Scenario Outline: Unsuccessful login 
+Scenario Outline: Unsuccessful login
+	When user enters "<username>" in username field
+	And user enters "<password>" in password field    
 	Then error message displayed with wrong password 
 	And user returns back on login page 
 	Examples: 
@@ -28,7 +32,6 @@ Scenario Outline: Unsuccessful login
 		| marah | 123 |
 		| ahme | ahmed12345 |
 		| khalid | khalid12345 |
-		
 		
 		
 		
