@@ -4,7 +4,7 @@ import hospital.User;
 import java.util.ArrayList;
 
 public class Hospital {
-/*
+
 	private boolean status;
 
 	public static ArrayList<User> user = new ArrayList<User>();
@@ -84,5 +84,5 @@ public class Hospital {
 		return this.status;
 
 	}
-	*/
+
 }

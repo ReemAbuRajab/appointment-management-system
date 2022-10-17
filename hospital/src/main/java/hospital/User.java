@@ -1,7 +1,7 @@
 package hospital;
 
 public class User {
-	/*
+
 	private boolean status;
 	private String name;
 	private String password;
@@ -44,5 +44,5 @@ public class User {
 	public void setType(String type) {
 		this.type = type;
 	}
-	*/
+	
 }
