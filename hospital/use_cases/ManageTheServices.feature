@@ -37,7 +37,7 @@ When user click on Medical Services button
 And the Services  is not available "Service" is incorrect
 Then user should see "Sorry the Service is not avilable" Massage
 
-Scenario: Payment method un correct
+Scenario: Payment method incorrect
 Given user enters the "Payment method"
 When user click on Medical Services button
 And the Payment method is not available "Payment method" is incorrect
