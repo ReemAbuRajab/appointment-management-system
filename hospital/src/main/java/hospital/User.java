@@ -7,12 +7,12 @@ public class User {
 	private String password;
 	private String type;
 
-	public void User() {
-		this.name = null;
-		this.password = null;
-		this.type = null;
-		this.status = false;
+	public User(String name, String password, String type) {
+		this.name=name;
+		this.password=password;
+		this.type=type;
 	}
+	
 
 	public boolean isStatus() {
 		return status;
@@ -23,7 +23,7 @@ public class User {
 	}
 
 	public String getPassword() {
-		return password;
+		return this.password;
 	}
 
 	public void setPassword(String password) {
@@ -31,18 +31,37 @@ public class User {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
 	}
 	public String getType() {
-		return type;
+		return this.type;
 	}
 
 	public void setType(String type) {
 		this.type = type;
 	}
+	public boolean CheckName(String name) {
+		if(this.name==name) {
+			return true;
+		}
+		return false;
+	}
+	public boolean CheckPassword(String pass) {
+		if(this.password==pass) {
+			return true;
+		}
+		return false;
+	}
+	public boolean CheckType(String type) {
+		if(this.type==type) {
+			return true;
+		}
+		return false;
+	}
+	
 	
 }

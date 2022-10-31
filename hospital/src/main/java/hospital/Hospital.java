@@ -9,21 +9,16 @@ public class Hospital {
 
 	public static ArrayList<User> user = new ArrayList<User>();
 
-	public boolean loginUser(String username, String password, String type) {
-
-		for (User u : user) {
-			if ((u.getName().equalsIgnoreCase(username)) && (u.getPassword().equalsIgnoreCase(password))
-					&& u.getType().equalsIgnoreCase(type)) {
-				u.setStatus(true);
-				System.out.println("Login succesfully");
+	public boolean loginUser(boolean status) {
+			if (status) {
+				System.out.println("Login Success");
 				return true;
 			}
-
-		}
-		System.out.println("Check your password");
+		
+		System.out.println("Login Faild");
 		return false;
 	}
-
+/*
 	public boolean checklogin(String username, String password, String type) {
 		boolean f;
 		for (User u : user) {
@@ -43,6 +38,7 @@ public class Hospital {
 		return false;
 
 	}
+	*/
 
 	public boolean logoutUser(String username, String password, String type) {
 		for (User u : user) {
